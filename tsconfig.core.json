@@ -54,6 +54,8 @@
 		"allowSyntheticDefaultImports": true,
 		"resolveJsonModule": true,
 
+		"skipDefaultLibCheck": true,
+
 
 		// --------------------------------
 		// type-checking and type safety
