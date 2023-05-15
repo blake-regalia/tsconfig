@@ -1,0 +1,9 @@
+# unwanted
+**/.DS_Store
+**/*.ignore
+**/*.log
+**/scrap
+
+# ignore package-manager locks
+**/yarn.lock
+**/package-lock.json

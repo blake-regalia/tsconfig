@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Node",
+
+	"extends": "./tsconfig.core.json",
+
+	"compilerOptions": {
+		// --------------------------------
+		// transpilation
+		// --------------------------------
+
+		"lib": [
+			"ES2022"
+		]
+	}
+}

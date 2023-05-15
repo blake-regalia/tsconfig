@@ -1,0 +1,88 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Core",
+
+	"compilerOptions": {
+		// --------------------------------
+		// code generation
+		// --------------------------------
+
+		// generate sourcemaps
+		"sourceMap": true,
+
+		// ensure consistent build outputs for code hashes
+		"newLine": "lf",
+		// "removeComments": true,
+
+		
+		// --------------------------------
+		// import behavior
+		// --------------------------------
+
+		// 
+		"allowJs": true,
+
+		// use node resolution algorithm
+		"moduleResolution": "node",
+
+		// case-sensitive file names
+		"forceConsistentCasingInFileNames": true,
+
+		// 
+		"verbatimModuleSyntax": true,
+
+		// "isolatedModules": true,
+
+
+		// --------------------------------
+		// transpilation
+		// --------------------------------
+
+		// target modern ES
+		"target": "es2022",
+		"module": "es2022",
+		"lib": [
+			"ES2022"
+		],
+
+
+		// --------------------------------
+		// preferences
+		// --------------------------------
+
+ 		// convenien for development sake
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+
+
+		// --------------------------------
+		// type-checking and type safety
+		// --------------------------------
+
+		// parameteric type generics
+		// "noStrictGenericChecks": true,
+
+		// ensure certain coding styles are not mishandled by compiler
+		"exactOptionalPropertyTypes": true,
+		// "noPropertyAccessFromIndexSignature": false,
+		"noPropertyAccessFromIndexSignature": true,
+
+		// type checking and type safety
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"strict": true,
+		"strictNullChecks": true,
+
+		// the following are deferred for linting:
+		// - allowUnreachableCode
+		// - allowUnusedLabels
+		// - noImplicitAny 
+		// - noFallthroughCasesInSwitch
+
+		// intentionally disabled
+		"noUncheckedIndexedAccess": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "@blake.regali/tsconfig",
+	"version": "0.0.1",
+	"description": "TSConfigs for various environments",
+	"keywords": [],
+	"license": "ISC",
+	"author": {
+		"name": "Blake Regalia",
+		"email": "blake.regalia@gmail.com",
+		"url": "https://blake-regalia.com/"
+	},
+	"files": [
+		"tsconfig.*"
+	],
+	"scripts": {},
+	"peerDependencies": {
+		"typescript": ">=5"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
