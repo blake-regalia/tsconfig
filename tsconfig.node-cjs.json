@@ -11,6 +11,8 @@
 		"module": "CommonJS",
 
 		"verbatimModuleSyntax": false,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+
+		"skipLibCheck": true
 	}
 }
