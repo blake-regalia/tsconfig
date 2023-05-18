@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Node CommonJS",
+
+	"extends": "./tsconfig.node.json",
+
+	"compilerOptions": {
+		// --------------------------------
+		// transpilation
+		// --------------------------------
+		"module": "CommonJS",
+
+		"verbatimModuleSyntax": false,
+		"esModuleInterop": true
+	}
+}
