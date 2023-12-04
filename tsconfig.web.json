@@ -16,12 +16,4 @@
 			"WebWorker"
 		]
 	}
-
-	// "include": [
-	// 	"src/**/*.d.ts",
-	// 	"src/**/*.ts",
-	// 	"test/**/*.ts",
-	// 	"rollup.config.ts",
-	// 	".eslintrc.cjs"
-	// ]
 }

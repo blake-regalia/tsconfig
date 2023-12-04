@@ -85,6 +85,9 @@
 		// intentionally disabled
 		"noUncheckedIndexedAccess": false,
 		"noUnusedLocals": false,
-		"noUnusedParameters": false
+		"noUnusedParameters": false,
+
+		// prevent truncation of types in intellisense
+		"noErrorTruncation": true
 	}
 }
