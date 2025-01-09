@@ -2,18 +2,5 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Node",
 
-	"extends": "./tsconfig.core.json",
-
-	"compilerOptions": {
-		// --------------------------------
-		// transpilation
-		// --------------------------------
-		"moduleResolution": "nodenext",
-		"module": "ESNext",
-		"target": "ESNext",
-		"lib": ["ESNext"],
-
-		// ignore node.js internal type errors
-		"skipLibCheck": true
-	}
+	"extends": ["./tsconfig.core.json", "@tsconfig/node22"],
 }

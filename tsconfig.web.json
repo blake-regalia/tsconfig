@@ -2,23 +2,17 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Modern Web",
 
-	"extends": "./tsconfig.core.json",
+	"extends": ["./tsconfig.core.json", "@tsconfig/svelte"],
 
 	"compilerOptions": {
 		// --------------------------------
 		// transpilation
 		// --------------------------------
-		"moduleResolution": "bundler",
-		"module": "ESNext",
-		"target": "ES2022",
 		"lib": [
 			"ES2024",
 			"DOM",
 			"DOM.Iterable",
 			"WebWorker"
 		],
-
-		// from svelte
-		"esModuleInterop": true,
 	}
 }

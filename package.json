@@ -1,6 +1,6 @@
 {
 	"name": "@blake.regalia/tsconfig",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"description": "TSConfigs for various environments",
 	"keywords": [],
 	"license": "ISC",
@@ -12,11 +12,17 @@
 	"files": [
 		"tsconfig.*"
 	],
-	"scripts": {},
+	"scripts": {
+		"build": "echo 'Ok'"
+	},
 	"peerDependencies": {
 		"typescript": ">=5"
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"devDependencies": {
+		"@tsconfig/node22": "^22.0.0",
+		"@tsconfig/svelte": "^5.0.4"
 	}
 }
