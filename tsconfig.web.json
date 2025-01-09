@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Modern Web",
 
-	"extends": ["./tsconfig.core.json", "@tsconfig/svelte"],
+	"extends": ["./tsconfig.core.json", "@tsconfig/svelte/tsconfig.json"],
 
 	"compilerOptions": {
 		// --------------------------------

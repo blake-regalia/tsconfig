@@ -2,5 +2,5 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Node",
 
-	"extends": ["./tsconfig.core.json", "@tsconfig/node22"],
+	"extends": ["./tsconfig.core.json", "@tsconfig/node22/tsconfig.json"],
 }
