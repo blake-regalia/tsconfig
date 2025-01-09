@@ -21,7 +21,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"@tsconfig/node22": "^22.0.0",
 		"@tsconfig/svelte": "^5.0.4"
 	}
