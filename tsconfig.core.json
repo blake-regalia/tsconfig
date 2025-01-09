@@ -34,9 +34,6 @@
 		// allow importing JSON modules
 		"resolveJsonModule": true,
 
-		// use node resolution algorithm
-		"moduleResolution": "nodenext",
-
  		// convenient for development sake
 		"allowSyntheticDefaultImports": true,
 

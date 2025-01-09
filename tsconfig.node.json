@@ -9,9 +9,8 @@
 		// transpilation
 		// --------------------------------
 		"moduleResolution": "nodenext",
-
-		"target": "ESNext",
 		"module": "ESNext",
+		"target": "ESNext",
 		"lib": ["ESNext"],
 
 		// ignore node.js internal type errors

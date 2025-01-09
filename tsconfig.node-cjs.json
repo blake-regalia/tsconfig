@@ -8,10 +8,15 @@
 		// --------------------------------
 		// transpilation
 		// --------------------------------
+		"moduleResolution": "node16",
 		"module": "CommonJS",
-		"moduleResolution": "nodenext",
+		"lib": ["ES2023"],
+		"target": "ES2022",
 
 		"verbatimModuleSyntax": false,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+
+		// ignore node.js internal type errors
+		"skipLibCheck": true,
 	}
 }
