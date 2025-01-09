@@ -7,36 +7,57 @@
 		// code generation
 		// --------------------------------
 
-		// generate sourcemaps
+		// always generate `.d.ts` files
+		"declaration": true,
+
+		// source map back to original `.ts` source file
+		"declarationMap": true,
+
+		// generate sourcemaps and embed the source in the `.map.js` file
 		"sourceMap": true,
+		"inlineSources": true,
 
 		// ensure consistent build outputs for code hashes
 		"newLine": "lf",
-		// "removeComments": true,
 
 		
 		// --------------------------------
 		// import behavior
 		// --------------------------------
 
-		// 
+		// allow bundlers to import files with arbitrary extensions, like *.txt, *.svg, etc.
+		"allowArbitraryExtensions": true,
+
+		// allow importing `.js` files for compatibility
 		"allowJs": true,
 
+		// allow importing JSON modules
+		"resolveJsonModule": true,
+
 		// use node resolution algorithm
-		"moduleResolution": "node",
+		"moduleResolution": "nodenext",
+
+ 		// convenient for development sake
+		"allowSyntheticDefaultImports": true,
 
 		// case-sensitive file names
 		"forceConsistentCasingInFileNames": true,
 
-		// 
+		// distinction between `import type {...}` and `import`{...}`
 		"verbatimModuleSyntax": true,
 
-		// "isolatedModules": true,
+		// --------------------------------
+		// up to user:
+		// - isolatedModules
+		// --------------------------------
 
 
 		// --------------------------------
 		// transpilation
 		// --------------------------------
+
+		// always emit 'use strict'
+		"alwaysStrict": true,
 
 		// target modern ES
 		"target": "es2022",
@@ -50,44 +71,62 @@
 		// preferences
 		// --------------------------------
 
- 		// convenien for development sake
-		"allowSyntheticDefaultImports": true,
-		"resolveJsonModule": true,
-
-		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
 
 
 		// --------------------------------
 		// type-checking and type safety
 		// --------------------------------
 
+		// the following are deferred for linting:
+		// - allowUnreachableCode
+		// - allowUnusedLabels
+		// - noFallthroughCasesInSwitch
+
 		// parameteric type generics
 		// "noStrictGenericChecks": true,
 
 		// ensure certain coding styles are not mishandled by compiler
 		"exactOptionalPropertyTypes": true,
-		// "noPropertyAccessFromIndexSignature": false,
-		"noPropertyAccessFromIndexSignature": true,
 
 		// type checking and type safety
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
+		"noPropertyAccessFromIndexSignature": true,
+
+		// strong type safety enables:
+		// - strictNullChecks
+		// - strictBindCallApply
+		// - strictFunctionTypes
+		// - strictPropertyInitialization
+		// - noImplicitAny
+		// - noImplicitThis
+		// - useUnknownInCatchVariables
 		"strict": true,
-		"strictNullChecks": true,
 
-		// the following are deferred for linting:
-		// - allowUnreachableCode
-		// - allowUnusedLabels
-		// - noImplicitAny 
-		// - noFallthroughCasesInSwitch
-
+		// --------------------------------
 		// intentionally disabled
+		// --------------------------------
+
+		// too inconvenient for frequent use of dicts
 		"noUncheckedIndexedAccess": false,
+
+		// handled by linter
 		"noUnusedLocals": false,
+
+		// handled by linter
 		"noUnusedParameters": false,
 
+	
+		// --------------------------------
+		// for intellisense and compilation performance
+		// --------------------------------
+
 		// prevent truncation of types in intellisense
-		"noErrorTruncation": true
+		"noErrorTruncation": true,
+
+		// incremental builds with .tsbuildinfo
+		"incremental": true,
 	}
 }

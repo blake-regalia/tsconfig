@@ -8,9 +8,12 @@
 		// --------------------------------
 		// transpilation
 		// --------------------------------
+		"moduleResolution": "bundler",
 
+		"target": "ES2024",
+		"module": "ES2022",
 		"lib": [
-			"ES2022",
+			"ES2024",
 			"DOM",
 			"DOM.Iterable",
 			"WebWorker"

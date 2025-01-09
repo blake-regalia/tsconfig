@@ -9,6 +9,7 @@
 		// transpilation
 		// --------------------------------
 		"module": "CommonJS",
+		"moduleResolution": "nodenext",
 
 		"verbatimModuleSyntax": false,
 		"esModuleInterop": true
